@@ -41,32 +41,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	-->
 
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<!-- This is the traditional favicon.
-		 - size: 16x16 or 32x32
-		 - transparency is OK
-		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
-	<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
-	<link rel="apple-touch-icon" href="_/img/apple-touch-icon.png">
-	<!-- The is the icon for iOS's Web Clip.
-		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
-		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
-		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
-
 	<!-- CSS: screen, mobile & print are all in the same file -->
 	<link rel="stylesheet" href="style/reset.css">
 	<link rel="stylesheet" href="style/site.css">
-
+	<link type="text/css" href="style/base.css" rel="stylesheet" />
 	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
-	<script src="_/js/modernizr-1.7.min.js"></script>
-
+	<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.pikachoose.full.js"></script>
+	<script src="js/site.js" type="text/javascript"></script>
+	<script language="javascript">
+			$(document).ready( function (){
+				$("#pikame").PikaChoose();
+			});
+	</script>
+	
 </head>
 
 <body>
 
 <div class="wrapper site_frame"><!-- not needed? up to you: http://camendesign.com/code/developpeurs_sans_frontieres -->
 
-	<div id="header">
+	<div id="header" class="red">
 
 		<h1 id="title"><a href="/">AZ::Movies</a></h1>
 		<div id="user_links">
@@ -78,7 +74,7 @@
 		</div>
 		<div id="form_wrapper">
 		<form>
-			<input type="text" title="search" /><input type="submit" value="search" />
+			<input type="text" title="search" class="field"/><input type="submit" value="search" class="button" />
 		</form>
 		</div>
 	</div>
@@ -91,9 +87,28 @@
 	</div>
 	<div id="main_wrapper">
 		<div id="content_wrapper">
-			<h1>公告</h1>
+			<h2>這是一個頭檢查他媽的</h2>
 			<div class="dashboard_widget">
-				<img src="pictures/26601.jpg"	/>		
+      			      			<br />
+      			<ul id="pikame" >
+					<li><a href="#"><img class="dashboard_image_carousel" src="pictures/26601.jpg"	/></a><span>CONTENT ABOUT THIS FLIIIICK</span></li>
+					<li><a href="#"><img class="dashboard_image_carousel" src="pictures/26601.jpg"	/></a><span>jddsss</span></li>
+					<li><a href="#"><img class="dashboard_image_carousel" src="pictures/26601.jpg"	/></a><span>Bdddss</span></li>
+				</ul>
+				<br class="clear"/>
+      		</div>
+			<div class="dashboard_widget">
+				<h1>公告</h1>
+				<p>
+					<table>
+						<tr>
+							<td>這張專輯的概念是最接近一個搖滾歌劇，GWAR以來仙境。仙境“專輯後沒有任何陰謀，或跟隨它太鬆散。的概念，圍繞樂隊的地獄惡魔史詩般的戰鬥旅程。該專輯如下GWAR暴力的聲音已經到來，戰爭黨完善。
+這張專輯以前曾暫名為去死吧！從地獄和問候！除了地獄是一個由GWAR兩張專輯，有沒有其他比Oderus Urungus（已抵達另一暴力）主唱。
+GWAR的艾利斯庫柏的經典歌曲學校的出蓋單被釋放電台播放的專輯發行前，它的視頻被槍殺在八月，於8月19日首映MTV的Headbanger的球。</td><td>
+超越地獄是由Devin打包小伙子（世衛組織還提供了“折磨”和聲）和Cory斯穆特湯森生產。這張專輯是demo'd和記錄在科斯穆特的個人錄音棚（洗禮SlavePit工作室）與戴夫Brockie的主唱，在德文 - 湯森的工作室在溫哥華做的例外。</td>
+<td>這張專輯是作為一個普通的CD或在有限的DIGIPACK格式，其中還包括各種額外的獎金，加上擴大藝術品及海報DVD。背後的“奴隸坑”，這是所有的服裝，和存儲，以及名為“會議戴夫Brockie”生產者滿足背後Oderus面具的男子，短旅遊的特色場景剪輯的DVD功能，以及生產者德文 - 湯森（他的名字被拼錯的“湯森”）會議的第一次帶偽紀錄片的畫面。 DVD是由著名的金屬生產商金屬注射，崩潰一個GWAR記錄會話的俄羅斯記者的“金屬”米莎獎金草圖。</td>
+					</table>
+				</p>		
 			</div>
 		</div>
 		
